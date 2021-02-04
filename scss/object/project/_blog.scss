@@ -1,0 +1,100 @@
+.p-blog{
+  background-color: #f9f9f9;
+  overflow: hidden;
+  &__slide{
+    overflow: hidden;
+    margin: 0 auto;
+    width: 350px;
+    height: 330px;
+    @include mq(){
+      width: 200px;
+      height: auto;
+    }
+
+  }
+  &__slide-container{
+    position: relative;
+  }
+  &__slide-box{
+    background-color: white;
+    float: left;
+    width: 350px;
+    height: 330px;
+    text-align: center;
+    @include mq(){
+      width: 200px;
+      height: auto;
+    }
+
+  }
+
+  &__link{
+    display: block;
+    height: 100%;
+  }
+
+  &__slide-image{
+    height: 230px;
+    overflow: hidden;
+    @include mq(){
+      height: auto;
+    }
+    & img{
+      transition: all .25s;
+      transform: scale(1.2);
+      width: 100%;
+      height: 100%;
+      &:hover{
+        transition: all .25s;
+        transform: scale(1.0);
+
+      }
+    }
+  }
+
+  &__slide-title{
+    padding: $space_xl 0;
+    text-align: center;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    @include mq(){
+      padding: $space_xl 0;
+    }
+  }
+  &__btn{
+    display: block;
+    width: 150px;
+    height: 40px;
+    background-color: $btn-color;
+    color: $font-color_white;
+    margin:  30px auto;
+    border-radius: 15px;
+    text-align: center;
+  }
+  &__dot-container{
+    padding-top: $space_xl;
+    display: flex;
+    justify-content: center;
+
+  }
+  &__dot{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    border: 1px solid $dot-solid-color;
+    &:not(:last-child){
+      margin-right: $space_xl;
+    }
+    &.is-active{
+      background-color: $btn-color;
+    }
+    @include mq(){
+      width: 15px;
+      height: 15px;
+
+    }
+  }
+}

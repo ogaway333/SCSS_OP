@@ -1,0 +1,11 @@
+.p-access{
+  text-align: center;
+  &__text{
+    font-weight: bold;
+    line-height: 2.0;
+  }
+  &__map{
+    padding: $space_xl 0;
+
+  }
+}

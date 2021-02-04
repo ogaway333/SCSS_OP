@@ -1,0 +1,42 @@
+.p-hero{
+  overflow: hidden;
+  &__container{
+    position: relative;
+    height: 600px;
+    background-color: white;
+    opacity: 0.5;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: zoomIn 10s infinite;
+    @keyframes zoomIn {
+      0%{
+        transform: scale(1.0);
+
+      }
+      100%{
+        transform: scale(1.5);
+      }
+    }
+    @include mq {
+      height: calc(100vw * 0.75);
+    }
+  }
+
+  &__title{
+    letter-spacing: 0.3em;
+    font-family: $font-family-title;
+    font-size: $font-size_title;
+    color: $font-color_title;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    @include mq(){
+      font-size: $font-size_3l;
+    }
+  }
+
+}

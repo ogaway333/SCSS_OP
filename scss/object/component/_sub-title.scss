@@ -1,0 +1,10 @@
+.c-sub-title{
+  color: $font-color_subtitle;
+  font-family: $font-family-sub-title;
+  padding: $space_xxl;
+  text-align: center;
+  font-size: $font-size_xl;
+  @include mq(){
+    font-size: $font-size_l;
+  }
+}

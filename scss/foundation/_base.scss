@@ -1,0 +1,48 @@
+// ==============================
+// 変数
+// ==============================
+$header-color: #555555;
+$footer-color: #555555;
+$btn-color: #555555;
+$dot-solid-color: #555555;
+
+$font-family-title: 'Damion';
+$font-family-sub-title: 'Libre Baskerville';
+$font-family-text: 'Noto Serif JP';
+
+$font-color_title: #ffffff;
+$font-color_subtitle: #555555;
+$font-color_default: #555555;
+$font-color_white: #ffffff;
+
+$font-size_s: 12px;
+$font-size_default: 16px;
+$font-size_l: 20px;
+$font-size_xl: 24px;
+$font-size_xxl: 28px;
+$font-size_3l: 32px;
+
+$font-size_title: 40px;
+
+
+$space_s: 5px;
+$space_m: 10px;
+$space_l: 15px;
+$space_xl: 20px;
+$space_xxl: 30px;
+$space_3l: 40px;
+
+// ==============================
+// タグ
+// ==============================
+html{
+  line-height: normal;
+  @include mq(){
+    font-size: $font-size_s;
+  }
+}
+
+body{
+  font-family: $font-family-text;
+  color: $font-color_default;
+}

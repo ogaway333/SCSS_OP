@@ -1,0 +1,11 @@
+.p-about{
+  padding-bottom: $space_xxl;
+  &__text{
+    font-size: $font-size_l;
+    line-height: 2.0;
+    text-align: center;
+    @include mq(){
+      font-size: $font-size_default;
+    }
+  }
+}

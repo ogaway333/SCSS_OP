@@ -1,0 +1,13 @@
+.l-footer{
+  display: flex;
+  align-items: center;
+  background-color: $footer-color;
+  color: white;
+  height: 80px;
+  &__text{
+    margin: 0 auto;
+  }
+  @include mq(){
+    height: 50px;
+  }
+}
