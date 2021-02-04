@@ -10,8 +10,7 @@ $(function () {
   //ズーム後のhero画像切替
   var HeroCount = 0;
   var heroImages = ['images/hero.png', 'images/hero2.png', 'images/hero3.png'];
-  $('.js-change-image').attr('style', 'background-image: url("../images/' + heroImages[HeroCount] + '");');
-  $('.js-change-image').css('background-image', 'url(images/hero.png)');
+  $('.js-change-image').css('background-image', 'url(' + heroImages[HeroCount] + ')');
   setInterval(function () {
     HeroCount++;
     $('.js-change-image').css('background-image', 'url(' + heroImages[HeroCount] + ')');
